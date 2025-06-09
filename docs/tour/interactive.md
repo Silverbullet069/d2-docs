@@ -41,6 +41,12 @@ tooltips.
 
 Links are like tooltips, except you click to go to an external link.
 
+:::info
+When the link contains the `#` character as part of a URI fragment, e.g.,
+`https://example.com/page#fragment`, remember that the fragment will be
+treated as a comment if unquoted and unescaped.
+:::
+
 <CodeBlock className="language-d2">
     {Links}
 </CodeBlock>
@@ -49,11 +55,3 @@ Try clicking on each.
 
 <div
 className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/links.svg2')}}></div>
-
-:::info
-If you are using the Terrastruct app, you can link to other boards through their path.
-```d2
-x.link: Overview.My Service.Stuff
-```
-:::
-

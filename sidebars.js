@@ -76,6 +76,8 @@ const sidebars = {
         "tour/globs",
         "tour/comments",
         "tour/overrides",
+        "tour/models",
+        "tour/legend",
         "tour/auto-formatter",
       ],
     },
@@ -169,6 +171,8 @@ const sidebars = {
       link: { type: "doc", id: "releases/intro" },
       items: [
         "releases/intro",
+        "releases/0.7.0",
+        "releases/0.6.9",
         "releases/0.6.8",
         "releases/0.6.7",
         "releases/0.6.6",

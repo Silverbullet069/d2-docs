@@ -16,6 +16,8 @@ _bespoke() {
   sh_c d2 --pad 0 ./static/bespoke-d2/cat.d2 ./static/img/generated/cat.pdf
   sh_c d2 --pad 50 ./static/bespoke-d2/lotr.d2 ./static/img/generated/lotr.pdf
 
+  sh_c d2 --pad 50 ./static/bespoke-d2/c4-code.d2 ./static/img/generated/c4.pdf
+
   sh_c d2 --animate-interval=1600 -c --pad 50 -l elk ./static/bespoke-d2/tax.d2 ./static/img/generated/tax.svg2
   sh_c d2 --animate-interval=1600 -c --pad 0 -l elk ./static/bespoke-d2/pizza.d2 ./static/img/generated/pizza.svg2
   sh_c d2 --animate-interval=1600 -c --pad 0 -l elk ./static/bespoke-d2/johnwick.d2 ./static/img/generated/johnwick.svg2
@@ -33,6 +35,8 @@ _bespoke() {
   sh_c d2 --sketch ./static/bespoke-d2/grid-nested-connections.d2 ./static/img/generated/grid-nested-connections.svg2
 
   sh_c d2 --dark-theme=200 -l elk -c --pad 0 ./static/bespoke-d2/classes-3.d2 ./static/img/generated/classes-3.svg2
+
+  sh_c d2 -c --pad 50 ./static/bespoke-d2/styles-animated.d2 ./static/img/generated/styles-animated.svg2
 }
 
 main() {

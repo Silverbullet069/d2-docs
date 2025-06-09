@@ -10,6 +10,8 @@ import GlobsRecursive from '@site/static/d2/globs-recursive.d2';
 import GlobsRecursive2 from '@site/static/d2/globs-recursive-2.d2';
 import GlobsFilter from '@site/static/d2/globs-filter.d2';
 import GlobsFilter2 from '@site/static/d2/globs-filter-2.d2';
+import GlobsFilter3 from '@site/static/d2/globs-filter-3.d2';
+import GlobsFilterEndpoints from '@site/static/d2/globs-filter-endpoints.d2';
 import GlobsFilterGlobValue from '@site/static/d2/globs-filter-glob-value.d2';
 import GlobsInverseFilter from '@site/static/d2/globs-inverse-filter.d2';
 import GlobsNested from '@site/static/d2/globs-nested.d2';
@@ -119,13 +121,27 @@ diagramming: it only applies to non-container (AKA leaf) shapes.
 
 ## Filters
 
-Use `&` to filter what globs target.
+Use `&` to filter what globs target. You may use any reserved keyword to filter on.
 
 <CodeBlock className="language-d2">
     {GlobsFilter}
 </CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter.svg2')}}></div>
+
+### Property filters
+
+Aside from reserved keywords, there are special property filters for more specific
+targeting.
+
+- `connected: true|false`
+- `leaf: true|false`
+
+<CodeBlock className="language-d2">
+    {GlobsFilter3}
+</CodeBlock>
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-3.svg2')}}></div>
 
 ### Filters on array values
 
@@ -148,6 +164,24 @@ means the key must be specified.
 </CodeBlock>
 
 <div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-glob-value.svg2')}}></div>
+
+
+### Connection endpoint filters
+
+Connections can be filtered by properties on their source and destination shapes.
+
+<CodeBlock className="language-d2">
+    {GlobsFilterEndpoints}
+</CodeBlock>
+
+<div style={{width: 600}} className="embedSVG" dangerouslySetInnerHTML={{__html: require('@site/static/img/generated/globs-filter-endpoints.svg2')}}></div>
+
+Endpoint filters also work with IDs, e.g. `&src: b`.
+
+:::info
+Endpoint IDs are absolute. For example, `a.c` instead of just `c`, even if the glob is
+declared within `a`.
+:::
 
 ## Inverse filters
 
