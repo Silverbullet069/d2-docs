@@ -1,14 +1,3 @@
----
-created_date: 2025-05-03
-updated_on: 2025-05-03
-token: 38766
----
-
-<documents>
-<document index="1">
-<source>d2-docs/d2lang_com_tour_api.md</source>
-<document_content>
-Contents
 
 # D2 Oracle
 
@@ -200,8 +189,6 @@ g, _ = d2oracle.Delete(g, "a")
 
 Rename the ID of a shape or connection.
 
-info
-
 Note that the ID != label. If you want to change the label, use `Set`.
 
 ```
@@ -238,8 +225,6 @@ Move a given shape or connection to a different container.
 func Move(g *d2graph.Graph, boardPath []string, key, newKey string) (newG *d2graph.Graph, err error)
 
 ```
-
-info
 
 If you give two keys of the same scope (e.g. "a" to "b"), it's the same as `Rename`.
 
@@ -309,13 +294,6 @@ x -> z
 
 ```
 
-</document_content>
-</document>
-<document index="2">
-
-<source>d2-docs/d2lang_com_tour_auto_formatter.md</source>
-<document_content>
-Contents
 
 # Autoformat
 
@@ -352,24 +330,12 @@ d2 fmt file.d2
 
 The formatter is meant to be integrated into plugins and extensions which automatically
 call the formatter upon file writing. This functionality is dependent on the plugin.
-</document_content>
-</document>
-<document index="3">
 
-<source>d2-docs/d2lang_com_tour_cheat_sheet.md</source>
-<document_content>
 # Cheat Sheet
 
 Click the preview to download the PDF.
 
 ![d2 cheat sheet](https://terrastruct-site-assets.s3.us-west-1.amazonaws.com/documents/d2_cheat_sheet.pdf)
-</document_content>
-</document>
-<document index="4">
-
-<source>d2-docs/d2lang_com_tour_classes.md</source>
-<document_content>
-Contents
 
 # Classes
 
@@ -495,13 +461,6 @@ If you want to post-process D2 diagrams, you can also use classes to arbitrarily
 objects. Any `class` you apply is written into the SVG element as a `class` attribute. So
 for example, you can then apply custom CSS like `.stuff { ... }` (or use Javascript for
 onclick handlers and such) on a web page that D2 SVG is embedded in.
-</document_content>
-</document>
-<document index="5">
-
-<source>d2-docs/d2lang_com_tour_comments.md</source>
-<document_content>
-Contents
 
 # Comments
 
@@ -542,12 +501,7 @@ y -> z
 
 ```
 
-</document_content>
-</document>
-<document index="6">
 
-<source>d2-docs/d2lang_com_tour_community.md</source>
-<document_content>
 # Getting help & community
 
 - We have a Discord channel here, https://discord.gg/NF6X8K4eDq. If you have a
@@ -557,15 +511,10 @@ y -> z
   TODOs, and GitHub Discussions for
   feature requests and ideas.
 - If you have a private enquiry, please email us: hi@d2lang.com.
-</document_content>
-</document>
-<document index="7">
-<source>d2-docs/d2lang_com_tour_composition.md</source>
-<document_content>
 
 # Intro to Composition
 
-info
+
 
 This section's documentation is incomplete. We'll be adding more to this section soon.
 
@@ -613,12 +562,7 @@ SVG you see above.
 
 Composition is one of D2's most powerful features, as you'll see from the use cases in this
 section.
-</document_content>
-</document>
-<document index="8">
 
-<source>d2-docs/d2lang_com_tour_composition_formats.md</source>
-<document_content>
 # Export formats
 
 Since a diagram composed of multiple boards can't be represented as a single image, the
@@ -645,18 +589,18 @@ export options are different.
 - PowerPoint
   - Specify the output as `.pptx` to get a PowerPoint presentation.
   - Works on Google Slides, for easy web sharing of multi-board diagrams.
-  </document_content>
-  </document>
-  <document index="9">
-  <source>d2-docs/d2lang_com_tour_confluence.md</source>
-  <document_content>
+  
+  
+  
+  
+  
   Contents
 
 # Atlassian Confluence app
 
 Your browser does not support the video tag.
 
-info
+
 
 This app is for D2 Studio and requires an account on D2 Studio.
 
@@ -668,13 +612,6 @@ This app is for D2 Studio and requires an account on D2 Studio.
 - Every time diagram updates in D2 Studio, it's updated on the Confluence page
 
 Install Confluence app
-</document_content>
-</document>
-<document index="10">
-
-<source>d2-docs/d2lang_com_tour_connections.md</source>
-<document_content>
-Contents
 
 # Connections
 
@@ -696,7 +633,7 @@ Read Replica 1 -- Read Replica 2
 
 If you reference an undeclared shape in a connection, it's created (as shown in the [hello world](https://d2lang.com/tour/hello-world) example).
 
-info
+
 
 There are 4 valid ways to define a connection:
 
@@ -812,7 +749,7 @@ Arrowhead options
 - `cf-one`, `cf-one-required` (cf stands for crows foot)
 - `cf-many`, `cf-many-required`
 
-info
+
 
 It's recommended the arrowhead labels be kept short. They do not go through
 autolayout for optimal positioning like regular labels do, so long arrowhead labels are
@@ -844,13 +781,6 @@ x -> y: hello
 
 ```
 
-</document_content>
-</document>
-<document index="11">
-
-<source>d2-docs/d2lang_com_tour_containers.md</source>
-<document_content>
-Contents
 
 # Containers
 
@@ -948,13 +878,6 @@ birthdays: {
 
 ```
 
-</document_content>
-</document>
-<document index="12">
-
-<source>d2-docs/d2lang_com_tour_dagre.md</source>
-<document_content>
-Contents
 
 # Dagre
 
@@ -987,13 +910,6 @@ https://github.com/dagrejs/dagre
 
 ## Gallery
 
-</document_content>
-</document>
-<document index="13">
-
-<source>d2-docs/d2lang_com_tour_design.md</source>
-<document_content>
-Contents
 
 # Design decisions
 
@@ -1134,17 +1050,12 @@ each individual shape and connection and more seeing the general patterns. D2 is
 designed for this use case. There are much better tools for that.
 
 !graph example
-</document_content>
-</document>
-<document index="14">
 
-<source>d2-docs/d2lang_com_tour_dimensions.md</source>
-<document_content>
 # Dimensions
 
 You can specify the `width` and `height` of most shapes.
 
-info
+
 
 These keywords cannot be set on containers, since containers resize to fit their children.
 
@@ -1176,13 +1087,6 @@ big jerry -> med jerry -> small jerry
 
 ```
 
-</document_content>
-</document>
-<document index="15">
-
-<source>d2-docs/d2lang_com_tour_discord.md</source>
-<document_content>
-Contents
 
 # Discord plugin
 
@@ -1195,12 +1099,7 @@ Keep your projects moving by connecting Terrastruct and Discord. Compile D2 code
 Configure your exports by using `/d2` inside Discord.
 
 Add to Discord Your browser does not support the video tag.
-</document_content>
-</document>
-<document index="16">
 
-<source>d2-docs/d2lang_com_tour_editor_support.md</source>
-<document_content>
 # Editor Support
 
 We have first class language support for both Vim and VS Code.
@@ -1213,18 +1112,11 @@ the D2 language far more pleasant.
 
 The syntax highlighting will even catch basic errors for you if your color theme
 highlights illegal syntax.
-</document_content>
-</document>
-<document index="17">
-
-<source>d2-docs/d2lang_com_tour_elk.md</source>
-<document_content>
-Contents
 
 # ELK
 
 ELK is a mature, hierarchical layout, actively maintained by an academic research group at
-[Christian Albrechts University in Kiel](https://www.rtsys.informatik.uni-kiel.de/en/team).
+[Christian Albrechts University in Kiel](https://www.rtsys.rmatik.uni-kiel.de/en/team).
 
 ## Reference
 
@@ -1248,12 +1140,7 @@ https://www.eclipse.org/elk/reference.html
 
 ## Gallery
 
-</document_content>
-</document>
-<document index="18">
 
-<source>d2-docs/d2lang_com_tour_experience.md</source>
-<document_content>
 # A diagramming dev tool
 
 D2 is designed towards a single goal: **turn diagramming into a pleasant experience for**
@@ -1274,13 +1161,6 @@ were clicking around AWS and Google Cloud consoles to configure their infrastruc
 Nowadays, that's just unprofessional. Where's the review process, the rollback steps, the
 history and version control? It's hard to believe that the future of visual documentation
 in companies around the world will predominantly be made with drag-and-drop design tools.
-</document_content>
-</document>
-<document index="19">
-
-<source>d2-docs/d2lang_com_tour_exports.md</source>
-<document_content>
-Contents
 
 # Exports
 
@@ -1326,7 +1206,7 @@ PNG exports work by Playwright spinning up a
 headless browser, putting the SVG onto it, and taking a screenshot. The first invocation
 of Playwright will download its dependencies, if they don't already exist on the machine.
 
-info
+
 
 If you get a message like `err: failed to launch Chromium`, you can try installing
 Playwright dependencies outside of D2 on your machine. For example:
@@ -1392,13 +1272,6 @@ echo "x -> y" | d2 - - > example.svg
 
 ```
 
-</document_content>
-</document>
-<document index="20">
-
-<source>d2-docs/d2lang_com_tour_extensions.md</source>
-<document_content>
-Contents
 
 # Overview
 
@@ -1441,12 +1314,6 @@ issue and we're happy to include your's!
 - MkDocs plugin: https://github.com/landmaj/mkdocs-d2-plugin
 - C# & dotnet SDK: https://github.com/Stephanvs/d2lang-cs
 - Zed extension: https://github.com/gabeidx/zed-d2
-</document_content>
-</document>
-<document index="21">
-<source>d2-docs/d2lang_com_tour_faq.md</source>
-<document_content>
-Contents
 
 # Frequently asked questions (FAQ)
 
@@ -1532,12 +1399,7 @@ tldr; when it's treated as an image, the interactivity is lost.
 | CSS background image | No             |
 | <embed> tag          | Yes            |
 
-</document_content>
-</document>
-<document index="22">
 
-<source>d2-docs/d2lang_com_tour_fonts.md</source>
-<document_content>
 # Fonts
 
 D2 uses 4 font families:
@@ -1569,17 +1431,10 @@ one but not all of the fonts, it will fall back to Source Sans Pro for the missi
 For example, if you give a `--font-regular` and `--font-bold`, then the italic will remain
 as Source Sans Pro Italic.
 
-info
+
 
 Do you want to customize the fonts for code or sketch mode? Please raise an Issue on
 GitHub. We'll support this if there's demand.
-</document_content>
-</document>
-<document index="23">
-
-<source>d2-docs/d2lang_com_tour_future.md</source>
-<document_content>
-Contents
 
 # Roadmap
 
@@ -1772,13 +1627,6 @@ https://github.com/terrastruct/d2/pull/492
 
 \[5\] Actually, gopls single-handedly brings my machine back to 2005 speeds with how much
 CPU it consumes. Not the fault of vim-go though!
-</document_content>
-</document>
-<document index="24">
-
-<source>d2-docs/d2lang_com_tour_globs.md</source>
-<document_content>
-Contents
 
 # Globs
 
@@ -1863,8 +1711,6 @@ Spiderman 3
 
 ```
 
-info
-
 Notice how self-connections were omitted. While not entirely consistent with what you may
 expect from globs, we feel it is more pragmatic for this to be the behavior.
 
@@ -1932,8 +1778,6 @@ zone-A: {
 zone-A.** -> load balancer
 
 ```
-
-info
 
 Notice how `machine B` was not captured. Similar to the exception with `* -> *` omitting
 self-connections, recursive globs in connections also make an exception for practical
@@ -2094,13 +1938,6 @@ Imports
 If you import a file, the globs declared inside it are usually not carried over. Triple
 globs are the exception -- since they are global, importing a file with triple glob will
 carry that glob as well.
-</document_content>
-</document>
-<document index="25">
-
-<source>d2-docs/d2lang_com_tour_globs_64.md</source>
-<document_content>
-Contents
 
 # Globs
 
@@ -2185,8 +2022,6 @@ Spiderman 3
 
 ```
 
-info
-
 Notice how self-connections were omitted. While not entirely consistent with what you may
 expect from globs, we feel it is more pragmatic for this to be the behavior.
 
@@ -2254,8 +2089,6 @@ zone-A: {
 zone-A.** -> load balancer
 
 ```
-
-info
 
 Notice how `machine B` was not captured. Similar to the exception with `* -> *` omitting
 self-connections, recursive globs in connections also make an exception for practical
@@ -2416,13 +2249,6 @@ Imports
 If you import a file, the globs declared inside it are usually not carried over. Triple
 globs are the exception -- since they are global, importing a file with triple glob will
 carry that glob as well.
-</document_content>
-</document>
-<document index="26">
-
-<source>d2-docs/d2lang_com_tour_grid_diagrams.md</source>
-<document_content>
-Contents
 
 # Grid Diagrams
 
@@ -2598,8 +2424,6 @@ grid-rows: 4
 
 It would do the opposite.
 
-info
-
 These animations are also pure D2, so you can animate grid diagrams being built-up. Use
 the `animate-interval` flag with this
 code.
@@ -2660,8 +2484,6 @@ Oxygen
 "-218.79"
 
 ```
-
-info
 
 You may find it easier to just use Markdown tables though, especially if there are
 duplicate cells.
@@ -3002,12 +2824,7 @@ kubernetes.system.frontend node.deployment 2.flask pod*.class: flaskpod
 ```
 
 See more
-</document_content>
-</document>
-<document index="27">
 
-<source>d2-docs/d2lang_com_tour_hello_world.md</source>
-<document_content>
 # Hello World
 
 ```
@@ -3016,13 +2833,6 @@ x -> y: hello world
 ```
 
 This declares a connection between two shapes, `x` and `y`, with the label, `hello world`.
-</document_content>
-</document>
-<document index="28">
-
-<source>d2-docs/d2lang_com_tour_help.md</source>
-<document_content>
-Contents
 
 # Contributing
 
@@ -3046,13 +2856,6 @@ Discord, or email us (alex at terrastruct).
 - PrismJS highlighter
 
 Want to add something to this wishlist? Just make an Issue on D2's GitHub!
-</document_content>
-</document>
-<document index="29">
-
-<source>d2-docs/d2lang_com_tour_icons.md</source>
-<document_content>
-Contents
 
 # Icons
 
@@ -3072,11 +2875,7 @@ my network: {
 
 ```
 
-info
-
 Icons on connections coming soon.
-
-info
 
 Using the D2 CLI locally? You can specify local images like `icon: ./my_cat.png`.
 
@@ -3116,8 +2915,6 @@ vpc: VPC 1 10.1.0.0./16 {
 
 ```
 
-info
-
 Icons can be positioned with the `near` keyword introduced later.
 
 ## Add `shape: image` for standalone icon shapes
@@ -3138,13 +2935,6 @@ server -> github
 
 ```
 
-</document_content>
-</document>
-<document index="30">
-
-<source>d2-docs/d2lang_com_tour_imported_template.md</source>
-<document_content>
-Contents
 
 # Template
 
@@ -3184,20 +2974,11 @@ label: ""
 
 ```
 
-info
-
 This use case will be made much more powerful when D2 finishes glob ( `*`) support.
 
 ## Render of `diagram.d2`
 
 is this web scale?is this web scale?
-</document_content>
-</document>
-<document index="31">
-
-<source>d2-docs/d2lang_com_tour_imports.md</source>
-<document_content>
-Contents
 
 # Syntax
 
@@ -3254,8 +3035,6 @@ a -> b
 
 This tells D2 to take the contents of the file `x` and insert it into the map.
 
-info
-
 Spread imports only work within maps. Something like `a: ...@x.d2` is an invalid usage.
 
 ## Omit the extension
@@ -3274,8 +3053,6 @@ into
 x: @x
 
 ```
-
-info
 
 D2 will not open files that don't have `.d2` extension, which means an import like
 `@x.txt` won't work.
@@ -3319,8 +3096,6 @@ employees: {
 
 ```
 
-info
-
 Since `.` is used for targeting, if you want to import from a file with `.` in its name,
 use string quotes.
 
@@ -3343,18 +3118,9 @@ y: @../y.d2
 
 The above import will search directory `/Users/you/dev/` for `y.d2`, not `/Users/You`.
 
-info
-
 Unnecessary relative imports are removed by autoformat.
 
 `@./x` will be autoformatted to `@x`.
-</document_content>
-</document>
-<document index="32">
-
-<source>d2-docs/d2lang_com_tour_imports_use_cases.md</source>
-<document_content>
-Contents
 
 # Overview
 
@@ -3394,12 +3160,6 @@ patterns and principles.
 
 - Version visualization
 - Template
-</document_content>
-</document>
-<document index="33">
-<source>d2-docs/d2lang_com_tour_install.md</source>
-<document_content>
-Contents
 
 # Install
 
@@ -3443,8 +3203,6 @@ go install oss.terrastruct.com/d2@latest
 
 ```
 
-info
-
 You can also download precompiled binaries specific to your OS on the Github releases
 page:
 https://github.com/terrastruct/d2/releases.
@@ -3459,13 +3217,6 @@ d2 -w input.d2 out.svg
 
 It should have spun up a local web browser that will automatically refresh when you change
 `input.d2`. Modify `input.d2` as you go through this tour to follow along.
-</document_content>
-</document>
-<document index="34">
-
-<source>d2-docs/d2lang_com_tour_interactive.md</source>
-<document_content>
-Contents
 
 # Interactive
 
@@ -3513,8 +3264,6 @@ tooltips.
 
 Links are like tooltips, except you click to go to an external link.
 
-info
-
 When the link contains the `#` character as part of a URI fragment, e.g.,
 `https://example.com/page#fragment`, remember that the fragment will be
 treated as a comment if unquoted and unescaped.
@@ -3533,13 +3282,6 @@ x -> y: gazoontite {
 ```
 
 Try clicking on each.
-</document_content>
-</document>
-<document index="35">
-
-<source>d2-docs/d2lang_com_tour_intro.md</source>
-<document_content>
-Contents
 
 # D2 Tour
 
@@ -3617,25 +3359,16 @@ You can finish this tour in about 5-10 minutes, and at the end, there's a cheat 
 can download and refer to. If you want just the bare essentials, Getting Started takes
 ~2 mins.
 
-info
-
 The source code for D2 is hosted here:
 https://github.com/terrastruct/d2.
 
 The source code for these docs are here:
 https://github.com/terrastruct/d2-docs.
 
-info
-
 For each D2 snippet, you can hover over it to open directly in the Playground and tinker.
 
 There's some exceptions like snippets that use imports.
-</document_content>
-</document>
-<document index="36">
 
-<source>d2-docs/d2lang_com_tour_layers.md</source>
-<document_content>
 # Layers
 
 A "Layer" represents "a layer of abstraction". Each Layer starts off as a blank
@@ -3705,13 +3438,6 @@ layers: {
 
 ```
 
-</document_content>
-</document>
-<document index="37">
-
-<source>d2-docs/d2lang_com_tour_layouts.md</source>
-<document_content>
-Contents
 
 # Overview
 
@@ -3783,8 +3509,6 @@ x -> y -> z: hello
 
 ### Directions per container (TALA only)
 
-info
-
 Directions can only be set at a global level for all the layout engines except TALA. This
 is a limitation of their algorithms, which are hierarchical and only work in one
 direction. We are investigating ways to hack it to work.
@@ -3811,13 +3535,6 @@ a: {
 ```
 
 !directions in TALA
-</document_content>
-</document>
-<document index="38">
-
-<source>d2-docs/d2lang_com_tour_linking.md</source>
-<document_content>
-Contents
 
 # Linking between boards
 
@@ -3838,8 +3555,6 @@ layers: {
 }
 
 ```
-
-info
 
 If your board name has a `.`, use quotes to target that board.
 For example:
@@ -3894,12 +3609,7 @@ layers: {
 
 Notice how the navigation bar at the top is clickable. You can easily return to the root
 or any ancestor page by clicking on the text.
-</document_content>
-</document>
-<document index="39">
 
-<source>d2-docs/d2lang_com_tour_man.md</source>
-<document_content>
 # CLI manual
 
 The following is a copy of the `man` (manual) for the CLI. It is identical to the output
@@ -4048,13 +3758,6 @@ AUTHORS
 
 ```
 
-</document_content>
-</document>
-<document index="40">
-
-<source>d2-docs/d2lang_com_tour_model_view.md</source>
-<document_content>
-Contents
 
 # Model-view
 
@@ -4103,13 +3806,6 @@ it -> postgres: ssh, bypassing VPN
 ```
 
 IP is 192.2.2.1IP is 192.2.2.1
-</document_content>
-</document>
-<document index="41">
-
-<source>d2-docs/d2lang_com_tour_modular_classes.md</source>
-<document_content>
-Contents
 
 # Modular classes
 
@@ -4166,13 +3862,6 @@ app.signup -> modal: continue registration
 
 ```
 
-</document_content>
-</document>
-<document index="42">
-
-<source>d2-docs/d2lang_com_tour_nested_composition.md</source>
-<document_content>
-Contents
 
 # Nested composition
 
@@ -4236,12 +3925,7 @@ users: {
 
 ## Render of `overview.d2`
 
-</document_content>
-</document>
-<document index="43">
 
-<source>d2-docs/d2lang_com_tour_obsidian.md</source>
-<document_content>
 # Obsidian plugin
 
 D2 has an official plugin for Obsidian.
@@ -4251,13 +3935,6 @@ Currently it only supports rendering of D2 diagrams.
 Your browser does not support the video tag.
 
 **Github:** https://github.com/terrastruct/d2-obsidian
-</document_content>
-</document>
-<document index="44">
-
-<source>d2-docs/d2lang_com_tour_overrides.md</source>
-<document_content>
-Contents
 
 # Overrides
 
@@ -4361,13 +4038,6 @@ one.two: null
 
 ```
 
-</document_content>
-</document>
-<document index="45">
-
-<source>d2-docs/d2lang_com_tour_positions.md</source>
-<document_content>
-Contents
 
 # Positions
 
@@ -4528,8 +4198,6 @@ Note that `outside-left-center` is a different order than `center-left`.
 
 ## Near objects
 
-info
-
 Works in TALA only. We are working on shims to make this possible in other layout engines.
 
 You can also set `near` to the absolute ID of another shape to hint to the layout engine
@@ -4571,12 +4239,7 @@ On the TALA engine, you can also directly set the `top` and `left` values for ob
 the layout engine will only move other objects around it.
 
 For more on this, see page 17 of the [TALA user manual](https://github.com/terrastruct/TALA/blob/master/TALA_User_Manual.pdf).
-</document_content>
-</document>
-<document index="46">
 
-<source>d2-docs/d2lang_com_tour_scenarios.md</source>
-<document_content>
 # Scenarios
 
 A "Scenario" represents a different view of the base Layer.
@@ -4672,13 +4335,6 @@ scenarios: {
 
 ```
 
-</document_content>
-</document>
-<document index="47">
-
-<source>d2-docs/d2lang_com_tour_sequence_diagrams.md</source>
-<document_content>
-Contents
 
 # Sequence Diagrams
 
@@ -4746,8 +4402,6 @@ b -> d
 
 ```
 
-info
-
 An actor in D2 is also known elsewhere as "participant".
 
 ## Features
@@ -4797,8 +4451,6 @@ Before and after becoming friends: {
 
 Spans convey a beginning and end to an interaction within a sequence diagram.
 
-info
-
 A span in D2 is also known elsewhere as a "lifespan", "activation box", and "activation bar".
 
 You can specify a span by connecting a nested object on an actor.
@@ -4816,8 +4468,6 @@ alice.t2 <- bob.a
 ### Groups
 
 Groups help you label a subset of the sequence diagram.
-
-info
 
 A group in D2 is also known elsewhere as a "fragment", "edge group", and "frame".
 
@@ -4927,13 +4577,6 @@ alice.style: {
 ## Glossary
 
 !sequence diagram glossary
-</document_content>
-</document>
-<document index="48">
-
-<source>d2-docs/d2lang_com_tour_shapes.md</source>
-<document_content>
-Contents
 
 # Shapes
 
@@ -4985,20 +4628,13 @@ Cassandra
 
 ```
 
-info
-
 Keys are case-insensitive, so `postgresql` and `postgreSQL` will reference the same shape.
 
 Shape catalog
 
 There are other values that `shape` can take, but they're special types that are covered
 in the next section.
-</document_content>
-</document>
-<document index="49">
 
-<source>d2-docs/d2lang_com_tour_sketch.md</source>
-<document_content>
 # Sketch (Hand-drawn)
 
 D2 can render diagrams to give the aesthetic of a hand-drawn sketch.
@@ -5008,16 +4644,7 @@ D2 can render diagrams to give the aesthetic of a hand-drawn sketch.
 - https://play.d2lang.com
   supports this as well.
 
-info
-
 See our blog post on sketch mode
-</document_content>
-</document>
-<document index="50">
-
-<source>d2-docs/d2lang_com_tour_slack.md</source>
-<document_content>
-Contents
 
 # D2 app for Slack
 
@@ -5047,12 +4674,6 @@ Your browser does not support the video tag.
 
 - Privacy policy
 - Security policy
-</document_content>
-</document>
-<document index="51">
-<source>d2-docs/d2lang_com_tour_sql_tables.md</source>
-<document_content>
-Contents
 
 # SQL Tables
 
@@ -5086,8 +4707,6 @@ shorten:
 
 But you can set any constraint you'd like. It just won't be shortened if unrecognized.
 
-info
-
 You can also specify multiple constraints with an array.
 
 ```
@@ -5118,8 +4737,6 @@ objects.disk -> disks.id
 
 ```
 
-info
-
 When rendered with the TALA layout engine or ELK layout engine,
 connections point to the exact row.
 
@@ -5147,12 +4764,7 @@ cloud: {
 
 ```
 
-</document_content>
-</document>
-<document index="52">
 
-<source>d2-docs/d2lang_com_tour_steps.md</source>
-<document_content>
 # Steps
 
 A "Step" represents a step in a sequence of events.
@@ -5184,13 +4796,6 @@ steps: {
 
 ```
 
-</document_content>
-</document>
-<document index="53">
-
-<source>d2-docs/d2lang_com_tour_strings.md</source>
-<document_content>
-Contents
 
 # Strings
 
@@ -5224,8 +4829,6 @@ If you need to use such symbols, you can use single or double quoted strings:
 '$$$' -> "###"
 
 ```
-
-info
 
 You would use double quotes if your text contains single quotes, and vice-versa. If it includes both, use double quotes and simply `\` escape as you would in other languages.
 
@@ -5298,13 +4901,6 @@ correct it for you.
 You can use tabs to indent block strings after indenting to the base block string indent
 with two spaces. Any tabs in the base block string indent will be automatically converted
 to two spaces.
-</document_content>
-</document>
-<document index="54">
-
-<source>d2-docs/d2lang_com_tour_studio.md</source>
-<document_content>
-Contents
 
 # D2 Studio
 
@@ -5334,13 +4930,6 @@ importing existing D2 code and offboard the same way. No lock-in.
 Here's an example of a multi-layer D2 diagram presented in D2 studio's web interface:
 
 ![D2 Studio screenshot](https://app.terrastruct.com/diagrams/2034296181)
-</document_content>
-</document>
-<document index="55">
-
-<source>d2-docs/d2lang_com_tour_style.md</source>
-<document_content>
-Contents
 
 # Styles
 
@@ -5497,8 +5086,6 @@ x.style.border-radius: 3
 y.style.border-radius: 8
 
 ```
-
-info
 
 `border-radius` works on connections too, which controls how rounded the corners are. This
 only applies to layout engines that use corners (e.g. ELK), and of course, only has effect
@@ -5685,17 +5272,8 @@ style: {
 
 ```
 
-info
-
 All diagrams in this documentation are rendered with `pad=0`. If you're using `stroke` to
 create a frame for your diagram, you'll likely want to add some padding.
-</document_content>
-</document>
-<document index="56">
-
-<source>d2-docs/d2lang_com_tour_tala.md</source>
-<document_content>
-Contents
 
 # TALA
 
@@ -5742,13 +5320,6 @@ TALA's core algorithms use randomness in its initial placements and iterations. 
 not satisfied with a layout, you can produce different ones by specifying the seed with
 `--tala-seeds` flag. For example, these are the same diagrams as the above, with
 `--tala-seeds=2`.
-</document_content>
-</document>
-<document index="57">
-
-<source>d2-docs/d2lang_com_tour_text.md</source>
-<document_content>
-Contents
 
 # Text
 
@@ -5965,13 +5536,6 @@ asm: {
 
 ```
 
-</document_content>
-</document>
-<document index="58">
-
-<source>d2-docs/d2lang_com_tour_themes.md</source>
-<document_content>
-Contents
 
 # Themes
 
@@ -6014,8 +5578,6 @@ d2 themes
 Dark themes are not set by default, so your diagram will look the same regardless of
 whether the user's system preferences are light or dark.
 
-info
-
 All diagrams in these docs have a dark theme. Try toggling your system preference between
 light and dark and see how it changes.
 
@@ -6033,8 +5595,6 @@ Like regular themes, this can also be set with an environment variable.
 D2_DARK_THEME=200 d2 input.d2
 
 ```
-
-info
 
 The themes are catalogued separately into light and dark, but there's nothing stopping you
 from passing a dark theme ID to `theme` for your diagram to always be dark (or vice versa,
@@ -6155,17 +5715,8 @@ vars: {
 
 !D2 color codes
 
-info
-
 Not all color codes are currently used right now, but that may change in the future for
 new things that come to D2.
-</document_content>
-</document>
-<document index="59">
-
-<source>d2-docs/d2lang_com_tour_troubleshoot.md</source>
-<document_content>
-Contents
 
 # Troubleshooting
 
@@ -6247,13 +5798,6 @@ hello世界：مرحبا بالعال
 ```
 
 The character `：` is not the same as the ASCII `:`, and so it won't register as a label. For foreign language diagrams, please take care to use the ASCII versions of special characters like `:`, `;`, `.`, among others.
-</document_content>
-</document>
-<document index="60">
-
-<source>d2-docs/d2lang_com_tour_uml_classes.md</source>
-<document_content>
-Contents
 
 # UML Classes
 
@@ -6489,13 +6033,6 @@ PinValidation -> ATMTransaction: {
 
 ```
 
-</document_content>
-</document>
-<document index="61">
-
-<source>d2-docs/d2lang_com_tour_vars.md</source>
-<document_content>
-Contents
 
 # Variables & Substitutions
 
@@ -6655,13 +6192,6 @@ vars: {
 
 ```
 
-</document_content>
-</document>
-<document index="62">
-
-<source>d2-docs/d2lang_com_tour_version_visualization.md</source>
-<document_content>
-Contents
 
 # Version visualization
 
@@ -6789,12 +6319,7 @@ cp apple/team-charlie/api.d2 charlie-api.d2
 ```
 
 The rendered diagram is left as an exercise to the reader.
-</document_content>
-</document>
-<document index="63">
 
-<source>d2-docs/d2lang_com_tour_vim.md</source>
-<document_content>
 # Vim plugin
 
 D2 has an official, creator-maintained plugin for Vim. You can use any plugin manager to
@@ -6812,12 +6337,7 @@ The syntax highlighting will even catch basic errors for you if your color theme
 highlights illegal syntax.
 
 **Github:** https://github.com/terrastruct/d2-vim
-</document_content>
-</document>
-<document index="64">
 
-<source>d2-docs/d2lang_com_tour_vscode.md</source>
-<document_content>
 # VSCode extension
 
 D2 has an official, creator-maintained extension for VSCode. It's searchable and
@@ -6830,13 +6350,7 @@ The syntax highlighting will even catch basic errors for you if your color theme
 highlights illegal syntax.
 
 **Github:** https://github.com/terrastruct/d2-vscode
-</document_content>
-</document>
 
-<document index="65">
-
-<source>TALA/TALA_User_Manual.pdf</source>
-<document_content>
 
 # TALA User Manual
 
@@ -7320,7 +6834,3 @@ Yes, and it's known to give good results in many cases. But there's two things t
 ### 7.3 Can I use TALA to layout separately from D2?
 
 Yes, it's possible - they communicate with a serialized, JSON representation of a diagram. There's no reason you couldn't build that JSON from somewhere other than D2. However, it's not an intended use case, so isn't well-documented. If you have a use case in mind, please let us know and we'll help you.
-
-</document_content>
-</document>
-</documents>
